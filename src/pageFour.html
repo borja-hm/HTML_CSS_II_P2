@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Economia Circular/ Contacto</title>
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+</head>
+<body class="p4-body">
+    <include src="./views/header.html"></include>
+    <div class="container py-5">
+      <h1 class="mb-4 text-primary">Contáctanos <i class="fa-regular fa-message"></i></h1>
+  
+      <!-- ALERTA Bootstrap -->
+      <div class="alert alert-info" role="alert">
+        ¡Estamos encantados de saber de ti! Completa el formulario y te responderemos pronto.
+      </div>
+  
+      <!-- CARD Bootstrap -->
+      <div class="card shadow-sm p-4">
+        <form name="contact" method="POST" data-netlify="true" class="needs-validation" novalidate>
+          <input type="hidden" name="form-name" value="contact" />
+  
+          <!-- Nombre -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Nombre:</label>
+            <input type="text" id="name" name="name" class="form-control" required />
+            <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+          </div>
+  
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico:</label>
+            <input type="email" id="email" name="email" class="form-control" required />
+            <div class="invalid-feedback">Por favor, ingresa un correo válido.</div>
+          </div>
+  
+          <!-- Mensaje -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" class="form-control" required></textarea>
+            <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
+          </div>
+  
+          <!-- Botón -->
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  <include src="./views/footer.html"></include>
+</body>
+</html>
