@@ -1,18 +1,74 @@
+/**
+ * CONTENTS
+ *
+ * Mixins
+ *
+ * Imports
+ *  
+ * VARIABLES
+ *   Texto
+ *
+ *   Colores
+ *
+ *   Bordes
+ */
+
+/*------------------------------------------------------------------------------*\
+    #Mixin
+\*------------------------------------------------------------------------------*/
+
 @use "sass:color";
 
+
+
+
+
+/*------------------------------------------------------------------------------*\
+    #Imports
+\*------------------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
 
 
 
+
+
+/*------------------------------------------------------------------------------*\
+    #Texto
+\*------------------------------------------------------------------------------*/
+
 $font-family-sans-serif: "PT Sans Narrow", "Segoe UI","Helvetica Neue", Arial, sans-serif;
+
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$primary: #28a745; // color principal verde
-$info: #17a2b8; // color info para alertas
-$border-radius: 1rem; // bordes más redondeados
-$input-border-radius: .5rem; // inputs más suaves
-$font-size-base: 1.1rem; // tamaño de fuente base más grande
+$font-size-base: 1.1rem;
+
+
+
+
+
+/*------------------------------------------------------------------------------*\
+    #Colores
+\*------------------------------------------------------------------------------*/
+
 $enlace: rgb(10, 10, 10);
+
 $colorTitulo: rgba(1, 9, 121, 0.699);
+
+$primary: #28a745;
+
+$info: #17a2b8;
+
+
+
+
+
+/*------------------------------------------------------------------------------*\
+    #Bordes
+\*------------------------------------------------------------------------------*/
+
+$border-radius: 1rem;
+
+$input-border-radius: .5rem;
+
 $border-radius-authors: 50%;
